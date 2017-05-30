@@ -1,0 +1,22 @@
+int main()
+{
+int count;
+    char password[] = "F1#";
+    for(count = 0; count<3; count++){
+
+    if(isalpha(password[count])) {
+        if(isupper(password[count])) {
+            printf("%c is an upper case letter\n", password[count]);
+        } else {
+            printf("%c is a lower case letter", password[count]);
+            }
+    }
+    else {
+            if(isdigit(password[count])) {
+            printf("%c is a number\n", password[count]);
+            }
+             else {printf("%c is a character\n", password[count]);}
+          }
+    }
+    return 0;
+}
